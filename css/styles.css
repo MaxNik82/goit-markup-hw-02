@@ -23,21 +23,33 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);  
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;  
 }
 
 .list {
     list-style: none;
 }
 
-.list-link {
+.list-link,
+.filtr-link {
     text-decoration: none;
 }
 
 .list-link:hover,
-.list-link:focus {
+.list-link:focus,
+.filtr-link:hover,
+.filtr-link:focus {
     color: var(--accent-color);
 }
 
+/* Header */
+
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
 /* Logo */
 
@@ -45,23 +57,32 @@ body {
     color: #000000;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 .logo-word {
     color: var(--accent-color);
 }
 
-/* Site nav */
+/* Шапка сайта */
 
-.site-nav .nav-link {
+.nav-link {
     color: var(--primary-text-color);
     text-decoration: none;
+}
+
+.nav-link.current {
+    color: var(--accent-color);
 }
 
 .contact-nav .contact-link {
     color: #757575;
     text-decoration: none;
 }
+
+
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus,
 .contact-nav .contact-link:hover,
@@ -73,22 +94,35 @@ body {
 
 .hero {
     text-align: center;
-  }
+}
 .hero-title {
     color: var(--primary-white-color);
     background-color: var(--hero-bg-color);
-}
+    letter-spacing: 0.06em;
+    font-style: 400;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    }
 .button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     color: var(--white-color);
     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
 /* Section */
 
 .section-title {
     text-align: center;
-  }
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;   
+}
     
 .section-title,
 .list-title,
@@ -102,14 +136,43 @@ body {
     color: var(--list-text-color);
 }
 
+.list-advantages .list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.list-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
 /* Works */
 
 .list-work {
     color: var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8)
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
 }
 
 /* Team */
+
+/* ??????????????Делать дальше отсюда! Попробовать объеденить одинаковые параметры???????????? */
+.list-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}    
+
+.list-description {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
 
 /* Clients */
  
@@ -127,6 +190,8 @@ body {
 .footer .address {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .address-text {
@@ -139,17 +204,24 @@ body {
     color: var(--white-color);
 }
  
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase
+}
+
+
 /* Стили для Portfolio */
 
-/* Герой */
-
-a {
-    color: inherit;
-}
 .filtr-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     color: var(--primary-text-color);
-    background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color); 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 }
 .filtr-button:hover,
 .filtr-button:focus {
@@ -157,10 +229,23 @@ a {
     background: var(--accent-color);
 }
 
-.filtr-link {
-    text-decoration: none;
+.filtr-title { 
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
+ 
 .text {
     color: var(--list-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.filtr-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--white-color);
+    background: rgba(33, 150, 243, 0.9);    
 }
